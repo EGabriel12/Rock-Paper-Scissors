@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
     @property (nonatomic) RPSTurn *firstTurn;
     @property (nonatomic) RPSTurn *secondTurn;
     
-    -(instancetype) initWithTurn: (Move) turn;
+    -(instancetype) initWithFirstTurn: (RPSTurn*) playerTurn secondTurn: (RPSTurn*) computerTurn;
 @end
 
 NS_ASSUME_NONNULL_END

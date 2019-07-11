@@ -10,11 +10,11 @@
 #import "RPSTurn.h"
 
 @implementation RPSGame
-    -(instancetype) initWithTurn:(Move) turn {
+    -(instancetype) initWithFirstTurn:(RPSTurn*) playerTurn secondTurn: (RPSTurn*) computerTurn {
         self = [super init];
         if(self) {
-            _firstTurn.move = turn;
-            _secondTurn.move = turn;
+            _firstTurn = playerTurn;
+            _secondTurn = computerTurn;
         }
         return self;
     }

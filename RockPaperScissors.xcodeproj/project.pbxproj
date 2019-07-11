@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		88C05AA622D7633D001A4B6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C05AA522D7633D001A4B6A /* main.m */; };
+		88C05AAE22D764D3001A4B6A /* RPSGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C05AAD22D764D3001A4B6A /* RPSGame.m */; };
+		88C05AB122D764E6001A4B6A /* RPSTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C05AB022D764E6001A4B6A /* RPSTurn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		88C05AA222D7633D001A4B6A /* RockPaperScissors */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RockPaperScissors; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C05AA522D7633D001A4B6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88C05AAC22D764D3001A4B6A /* RPSGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSGame.h; sourceTree = "<group>"; };
+		88C05AAD22D764D3001A4B6A /* RPSGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPSGame.m; sourceTree = "<group>"; };
+		88C05AAF22D764E6001A4B6A /* RPSTurn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSTurn.h; sourceTree = "<group>"; };
+		88C05AB022D764E6001A4B6A /* RPSTurn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPSTurn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				88C05AA522D7633D001A4B6A /* main.m */,
+				88C05AAC22D764D3001A4B6A /* RPSGame.h */,
+				88C05AAD22D764D3001A4B6A /* RPSGame.m */,
+				88C05AAF22D764E6001A4B6A /* RPSTurn.h */,
+				88C05AB022D764E6001A4B6A /* RPSTurn.m */,
 			);
 			path = RockPaperScissors;
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C05AA622D7633D001A4B6A /* main.m in Sources */,
+				88C05AAE22D764D3001A4B6A /* RPSGame.m in Sources */,
+				88C05AB122D764E6001A4B6A /* RPSTurn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

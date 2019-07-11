@@ -16,4 +16,11 @@
         }
         return self;
     }
+    
+    -(Move) generateMove {
+        return Rock;
+    }
+    -(BOOL) defeats: (RPSTurn*) opponent {
+        return false;
+    }
 @end

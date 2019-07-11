@@ -8,9 +8,18 @@
 
 #import "RPSController.h"
 #import "RPSTurn.h"
+#import "RPSGame.h"
 
 @implementation RPSController
     -(void) throwDown: (Move) playersMove {
-        RPSTurn *playerTurn = [[RPSTurn alloc] initWithMove: playersMove];
+        RPSTurn *playersTurn = [[RPSTurn alloc] initWithMove: playersMove];
+        RPSTurn *computersTurn = [[RPSTurn alloc] init];
+        
+        computersTurn.move = playersTurn.move;
+        
+        self.game = [[RPSGame alloc] initWithFirstTurn: playersTurn secondTurn:computersTurn];
+//        RPSGame *game = [[RPSGame alloc] initWithFirstTurn:playersTurn secondTurn:computersTurn];
+//        [self game:game]; // Método setter
+        
     }
 @end

@@ -17,6 +17,14 @@
         return self;
     }
     
+    -(instancetype) init {
+        self = [super init];
+        if(self) {
+            _move = [self generateMove];
+        }
+        return self;
+    }
+    
     -(Move) generateMove {
         NSUInteger randomNumber = arc4random_uniform(3);
         
@@ -37,6 +45,24 @@
         //return Rock;
     }
     -(BOOL) defeats: (RPSTurn*) opponent {
-        return false;
+        if((self.move == Paper && opponent.move == Rock) || (self.move == Rock && opponent.move == Scissors) || (self.move == Scissors && opponent.move == Paper)){
+            return true;
+        }
+        else {
+            return false;
+        }
+        
+    }
+    -(NSString*) description {
+        switch (self.move) {
+            case Rock:
+            return @"Rock";
+            break;
+            case Paper:
+            return @"Paper";
+            default:
+            return @"Scissors";
+            break;
+        }
     }
     @end

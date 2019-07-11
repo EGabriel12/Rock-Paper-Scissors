@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RPSController : NSObject
     @property (nonatomic) RPSGame *game;
+    -(NSString*) resultString: (RPSGame*) game;
+    -(void) throwDown: (Move) playersMove;
+    -(NSString*)messageForGame:(RPSGame*)game;
 @end
 
 NS_ASSUME_NONNULL_END
